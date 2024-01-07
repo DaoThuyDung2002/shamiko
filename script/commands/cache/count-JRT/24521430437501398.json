@@ -1,0 +1,112 @@
+{
+    "user": [
+        {
+            "userID": "100091891485289",
+            "messenger": {
+                "day": 47,
+                "week": 44,
+                "all": 47
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "61553933296868",
+            "messenger": {
+                "day": 107,
+                "week": 107,
+                "all": 107
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100080647629698",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100080192990568",
+            "messenger": {
+                "day": 20,
+                "week": 20,
+                "all": 20
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100069626300784",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100093306224052",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "61554956021321",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100048066644641",
+            "messenger": {
+                "day": 25,
+                "week": 25,
+                "all": 25
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100095089925952",
+            "messenger": {
+                "day": 13,
+                "week": 13,
+                "all": 13
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100045493450397",
+            "messenger": {
+                "day": 43,
+                "week": 43,
+                "all": 43
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "1428542226",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1704644907969
+        },
+        {
+            "userID": "100088507428187",
+            "messenger": {
+                "day": 7,
+                "week": 7,
+                "all": 7
+            },
+            "timestamp": 1704644907969
+        }
+    ]
+}
