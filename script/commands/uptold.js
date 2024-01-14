@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 const si = require('systeminformation');
 
 module.exports.config = {
-  name: "upt",
+  name: "uptold",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "ductai",
