@@ -3,7 +3,7 @@ const moment = require('moment-timezone');
 const fs = require('fs').promises;
 
 module.exports.config = {
-  name: "upt",
+  name: "uptnew",
   version: "2.0.0",
   hasPermission: 0,
   credits: "Vtuan",
