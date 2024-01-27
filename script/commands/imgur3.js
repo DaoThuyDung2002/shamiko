@@ -23,7 +23,7 @@ this.run = async function({
     
     let result = [];
     for(let{url}of(event.messageReply.attachments || []))try {
-        result.push((await get(`https://api-imgur.trankhuong20723.repl.co/?${url}`)).data);
+        result.push((await get(`http://niiozic.site/imgur?url=${url}`)).data);
     } catch (e) {};
     
     send(JSON.stringify(result, 0,4));
