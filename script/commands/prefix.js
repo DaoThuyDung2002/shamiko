@@ -36,31 +36,31 @@ const axios = require('axios');
   if (thu == "Thursday") thu = '𝐓𝐡𝐮̛́ 𝐍𝐚̆𝐦'
   if (thu == 'Friday') thu = '𝐓𝐡𝐮̛́ 𝐒𝐚́𝐮'
   if (thu == 'Saturday') thu = '𝐓𝐡𝐮̛́ 𝐁𝐚̉𝐲'
-  //const namebot = config.BOTNAME
-  //const res = await axios.get(`${global.configApi.domain}/saying/hearing?apikey=${global.configApi.keyApi}`);
-//var thinh = res.data.data
-  //const req = await axios.get(`${global.configApi.domain}/saying/cadao?apikey=${global.configApi.keyApi}`);
-//var cadao = req.data.data
-  //const res1 = await axios.get(`${global.configApi.domain}/nsfw/vsbg?apikey=${global.configApi.keyApi}`);
+  const namebot = config.BOTNAME
+  const res = await axios.get(`${global.configApi.domain}/saying/hearing?apikey=${global.configApi.keyApi}`);
+  var thinh = res.data.data
+  const req = await axios.get(`${global.configApi.domain}/saying/cadao?apikey=${global.configApi.keyApi}`);
+  var cadao = req.data.data
+  const res1 = await axios.get(`${global.configApi.domain}/nsfw/vsbg?apikey=${global.configApi.keyApi}`);
 //const res2 = await axios.get(`${global.configApi.domain}/nsfw/ig?apikey=${global.configApi.keyApi}`);
 //const res3 = await axios.get(`${global.configApi.domain}/nsfw/gaisexy?apikey=${global.configApi.keyApi}`);
 //const res4 = await axios.get(`${global.configApi.domain}/images/girl?apikey=${global.configApi.keyApi}`);
 //const res5 = await axios.get(`${global.configApi.domain}/images/gaixinhvn?apikey=${global.configApi.keyApi}`);
 //const res6 = await axios.get(`${global.configApi.domain}/nsfw/ausand?apikey=${global.configApi.keyApi}`);
-//var data1 = res1.data.data;
-//var array = [];
+var data1 = res1.data.data;
+var array = [];
 //var data2 = res2.data.data;
 //var data3 = res3.data.data;
 //var data4 = res4.data.data;
 //var data5 = res5.data.data;
 //var data6 = res6.data.data;
-//var downloadfile1 = (await axios.get(data1, {responseType: 'stream'})).data;
+var downloadfile1 = (await axios.get(data1, {responseType: 'stream'})).data;
 //var downloadfile2 = (await axios.get(data2, {responseType: 'stream'})).data;
 //var downloadfile3 = (await axios.get(data3, {responseType: 'stream'})).data;
 //var downloadfile4 = (await axios.get(data4, {responseType: 'stream'})).data;
 //var downloadfile5 = (await axios.get(data5, {responseType: 'stream'})).data;
 //var downloadfile6 = (await axios.get(data6, {responseType: 'stream'})).data;
-    //array.push(downloadfile1);
+    array.push(downloadfile1);
     //array.push(downloadfile2);    
     //array.push(downloadfile3);
     //array.push(downloadfile4);
