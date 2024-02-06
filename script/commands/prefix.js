@@ -36,38 +36,38 @@ const axios = require('axios');
   if (thu == "Thursday") thu = '𝐓𝐡𝐮̛́ 𝐍𝐚̆𝐦'
   if (thu == 'Friday') thu = '𝐓𝐡𝐮̛́ 𝐒𝐚́𝐮'
   if (thu == 'Saturday') thu = '𝐓𝐡𝐮̛́ 𝐁𝐚̉𝐲'
-  const namebot = config.BOTNAME
-  const res = await axios.get(`${global.configApi.domain}/saying/hearing?apikey=${global.configApi.keyApi}`);
-var thinh = res.data.data
-  const req = await axios.get(`${global.configApi.domain}/saying/cadao?apikey=${global.configApi.keyApi}`);
-var cadao = req.data.data
-  const res1 = await axios.get(`${global.configApi.domain}/nsfw/vsbg?apikey=${global.configApi.keyApi}`);
+  //const namebot = config.BOTNAME
+  //const res = await axios.get(`${global.configApi.domain}/saying/hearing?apikey=${global.configApi.keyApi}`);
+//var thinh = res.data.data
+  //const req = await axios.get(`${global.configApi.domain}/saying/cadao?apikey=${global.configApi.keyApi}`);
+//var cadao = req.data.data
+  //const res1 = await axios.get(`${global.configApi.domain}/nsfw/vsbg?apikey=${global.configApi.keyApi}`);
 //const res2 = await axios.get(`${global.configApi.domain}/nsfw/ig?apikey=${global.configApi.keyApi}`);
 //const res3 = await axios.get(`${global.configApi.domain}/nsfw/gaisexy?apikey=${global.configApi.keyApi}`);
 //const res4 = await axios.get(`${global.configApi.domain}/images/girl?apikey=${global.configApi.keyApi}`);
 //const res5 = await axios.get(`${global.configApi.domain}/images/gaixinhvn?apikey=${global.configApi.keyApi}`);
 //const res6 = await axios.get(`${global.configApi.domain}/nsfw/ausand?apikey=${global.configApi.keyApi}`);
-var data1 = res1.data.data;
-var array = [];
+//var data1 = res1.data.data;
+//var array = [];
 //var data2 = res2.data.data;
 //var data3 = res3.data.data;
 //var data4 = res4.data.data;
 //var data5 = res5.data.data;
 //var data6 = res6.data.data;
-var downloadfile1 = (await axios.get(data1, {responseType: 'stream'})).data;
+//var downloadfile1 = (await axios.get(data1, {responseType: 'stream'})).data;
 //var downloadfile2 = (await axios.get(data2, {responseType: 'stream'})).data;
 //var downloadfile3 = (await axios.get(data3, {responseType: 'stream'})).data;
 //var downloadfile4 = (await axios.get(data4, {responseType: 'stream'})).data;
 //var downloadfile5 = (await axios.get(data5, {responseType: 'stream'})).data;
 //var downloadfile6 = (await axios.get(data6, {responseType: 'stream'})).data;
-    array.push(downloadfile1);
+    //array.push(downloadfile1);
     //array.push(downloadfile2);    
     //array.push(downloadfile3);
     //array.push(downloadfile4);
     //array.push(downloadfile5);    
     //array.push(downloadfile6);
 					api.sendMessage({
-                                                body: `💓 ==== [ ${namebot} ] ==== 💓\n━━━━━━━━━━━\n[⏰] ➜ 𝗧𝗶𝗺𝗲: ${timeNow}\n[⏳] ➜ 𝐁𝐎𝐓 đ𝐚̃ 𝐨𝐧𝐥𝐢𝐧𝐞 đ𝐮̛𝐨̛̣𝐜: ${hours} : ${minutes} : ${seconds}\n[🧸] ➜ 𝗛𝗼̂𝗺 𝗻𝗮𝘆 𝗹𝗮̀ ${thu}\n◆━━━◆『 ${icon} 』◆━━━◆\n[🥰] ➜ 𝗧𝗵𝗶́𝗻𝗵: ${thinh}\n[☁️] ➜ 𝗖𝗮 𝗱𝗮𝗼:\n${cadao}\n━━━━━━━━━━━\n[⚙️] ➜ 𝗧𝗶̀𝗻𝗵 𝘁𝗿𝗮̣𝗻𝗴: ${trinhtrang}\n[🌸] ➜ 𝗧𝗼̂́𝗰 đ𝗼̣̂ 𝘅𝘂̛̉ 𝗹𝘆́: ${Date.now() - timeStart} 𝗴𝗶𝗮̂𝘆\n[💮] ➜ 𝗧𝗵𝗮̉ 𝗰𝗮̉𝗺 𝘅𝘂́𝗰 "❤️" 𝘃𝗮̀𝗼 𝘁𝗶𝗻 𝗻𝗵𝗮̆́𝗻 𝗻𝗮̀𝘆 𝗰𝘂̉𝗮 𝗯𝗼𝘁 𝗻𝗲̂́𝘂 𝗺𝘂𝗼̂́𝗻 𝘅𝗲𝗺 𝗵𝗲𝗹𝗽`, attachment:array},event.threadID, (err, info) => {
+                                                body: `Xin chào! Tôi là Shamiko AI, một hệ thống robot Messenger hiện đại. Tôi có thể giúp bạn những gì nào?\nTốc độ xử lý của hệ thống: ${Datenow() - timeStart}ms\nHệ thống đã hoạt động được ${hours} giờ ${minutes} phút ${seconds} giây`, attachment:array},event.threadID, (err, info) => {
     global.client.handleReaction.push({
       name: this.config.name, 
       messageID: info.messageID,
