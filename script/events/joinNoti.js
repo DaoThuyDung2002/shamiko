@@ -97,7 +97,7 @@ module.exports.run = async function({ api, event, Users }) {
   abx.push(fs.createReadStream(__dirname + `/cache/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = "=== 𝐉𝐎𝐈𝐍 ===\n◆━━━━━━━━━━━━━━━━◆\n[⚜️] ➜ Xin chào {type} {name}.\n[✌️] ➜ Mừng {type} đã tham gia {threadName}.\n[❗] ➜ Từ lúc này, {name} sẽ là con báo thứ {soThanhVien} của nhà {threadName}\n[💥] ➜ Đừng spam bot hay phạm luật nhóm, bị kick đừng khóc :))\n◆━━━━━━━━━━━━━◆\n[❤️] ➜ Chúc quỷ {type} có một buổi {session} an nhiên\n[👉] ➜ Tham gia vào: {fullYear} || {time}\n◆━━━━━━━━━━━━━◆\n[📍] ➜ {author} đã thêm vào\n[🔗] ➜ Link facebook người thêm: https://www.facebook.com/profile.php?id={uidfb}" : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = "=== 𝐉𝐎𝐈𝐍 ===\n◆━━━━━━━━━━━━━━━━◆\n[⚜️] ➜ Xin chào {type} {name}.\n[✌️] ➜ Mừng {type} đã tham gia {threadName}.\n[❗] ➜ Từ lúc này, {name} sẽ là con báo thứ {soThanhVien} của nhà {threadName}\n[💥] ➜ Đừng spam bot hay phạm luật nhóm, bị kick đừng khóc :))\n◆━━━━━━━━━━━━━◆\n[❤️] ➜ Chúc quỷ {type} có một buổi {session} an nhiên\n[👉] ➜ Tham gia vào: {time}\n◆━━━━━━━━━━━━━◆\n[📍] ➜ {author} đã thêm vào\n[🔗] ➜ Link facebook người thêm: https://www.facebook.com/profile.php?id={uidfb}" : msg = threadData.customJoin;
       msg = msg
                 .replace(/\{iduser}/g, iduser)
                 .replace(/\{name}/g, nameArray.join(' • '))
