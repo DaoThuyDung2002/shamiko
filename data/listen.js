@@ -381,7 +381,7 @@ logger.loader(`Ping load toàn bộ commands và events • ${Date.now() - globa
     }; */
     switch (event.type) {
 			//<--Thay đổi ảnh nhóm-->//
-      	/*	case "change_thread_image": 
+      		case "change_thread_image": 
         		if(global.config.notiGroup) {
 					var msg = '=== 『 𝗖𝗔̣̂𝗣 𝗡𝗛𝗔̣̂𝗧 𝗡𝗛𝗢́𝗠 』 ===\n━━━━━━━━━━━━━━━━\n'
 					msg += event.snippet
@@ -394,7 +394,7 @@ logger.loader(`Ping load toàn bộ commands và events • ${Date.now() - globa
                 })).data
 }, event.threadID);
 				}
-        		break;*/
+        		break;
         	//<--Nhận, xử lí dữ liệu-->//
 			case "message":
 			case "message_reply":
@@ -406,7 +406,7 @@ logger.loader(`Ping load toàn bộ commands và events • ${Date.now() - globa
 
 				break;
 			//<--Nhận tin nhắn, thông báo thay đổi nhóm-->//
-		/*case "event":
+		case "event":
 				handleEvent({ event });
 				handleRefresh({ event });
 				if(global.config.notiGroup) {
@@ -421,7 +421,7 @@ logger.loader(`Ping load toàn bộ commands và events • ${Date.now() - globa
                 })).data
 }, event.threadID);
 				}
-				break;*/
+				break;
 			//<--Nhận cảm xúc-->//
 			case "message_reaction":
 				var { iconUnsend } = global.config
